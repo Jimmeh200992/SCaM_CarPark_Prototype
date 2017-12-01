@@ -8,5 +8,10 @@ namespace SCaM_CarPark_Prototype
 {
     class Barrier
     {
+        public bool raised = false;
+        public bool isBarrierRaised()
+        {
+            return raised;
+        }
     }
 }

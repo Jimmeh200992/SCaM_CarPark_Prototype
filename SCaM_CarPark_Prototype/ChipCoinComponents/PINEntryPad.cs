@@ -8,5 +8,16 @@ namespace SCaM_CarPark_Prototype
 {
     class PINEntryPad
     {
+        public int PIN, newPIN;
+
+        public int getPIN()
+        {
+            return PIN;
+        }
+
+        public void createPIN()
+        {
+            PIN = newPIN;
+        }
     }
 }
