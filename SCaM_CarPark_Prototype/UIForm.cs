@@ -16,5 +16,10 @@ namespace SCaM_CarPark_Prototype
         {
             InitializeComponent();
         }
+        private void btnPinEntry_Click(object sender, EventArgs e)
+        {
+            (new PinForm()).Show();
+            this.Hide();
+        }
     }
 }

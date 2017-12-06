@@ -30,7 +30,8 @@
         {
             this.btnDispenseCoin = new System.Windows.Forms.Button();
             this.btnEnter = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPin = new System.Windows.Forms.Button();
+            this.btnPark = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDispenseCoin
@@ -53,25 +54,37 @@
             this.btnEnter.Text = "Enter Car Park";
             this.btnEnter.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnPin
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 223);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(215, 75);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Enter Car Park";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnPin.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPin.Location = new System.Drawing.Point(12, 223);
+            this.btnPin.Name = "btnPin";
+            this.btnPin.Size = new System.Drawing.Size(215, 75);
+            this.btnPin.TabIndex = 2;
+            this.btnPin.Text = "Secure Pin Entry";
+            this.btnPin.UseVisualStyleBackColor = true;
+            this.btnPin.Click += new System.EventHandler(this.btnPinEntry_Click);
             // 
-            // UI
+            // btnPark
+            // 
+            this.btnPark.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPark.Location = new System.Drawing.Point(12, 385);
+            this.btnPark.Name = "btnPark";
+            this.btnPark.Size = new System.Drawing.Size(215, 75);
+            this.btnPark.TabIndex = 3;
+            this.btnPark.Text = "Park Car";
+            this.btnPark.UseVisualStyleBackColor = true;
+            // 
+            // UIForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(993, 677);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnPark);
+            this.Controls.Add(this.btnPin);
             this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.btnDispenseCoin);
-            this.Name = "UI";
+            this.Name = "UIForm";
             this.Text = "UI";
             this.ResumeLayout(false);
 
@@ -81,6 +94,7 @@
 
         private System.Windows.Forms.Button btnDispenseCoin;
         private System.Windows.Forms.Button btnEnter;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPin;
+        private System.Windows.Forms.Button btnPark;
     }
 }
