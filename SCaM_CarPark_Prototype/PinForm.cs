@@ -12,6 +12,7 @@ namespace SCaM_CarPark_Prototype
 {
     public partial class PinForm : Form
     {
+
         public PinForm()
         {
             InitializeComponent();
@@ -128,6 +129,11 @@ namespace SCaM_CarPark_Prototype
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtEnterPin.Text = "Please Enter Your Secure Pin";
+        }
+
+        private void btnEnter_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }
