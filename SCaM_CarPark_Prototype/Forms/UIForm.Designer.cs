@@ -32,10 +32,24 @@
             this.btnEnter = new System.Windows.Forms.Button();
             this.btnPin = new System.Windows.Forms.Button();
             this.btnPark = new System.Windows.Forms.Button();
+            this.btnPayFee = new System.Windows.Forms.Button();
             this.btnLeaveCarPark = new System.Windows.Forms.Button();
             this.btnPayment = new System.Windows.Forms.Button();
-            this.btnInsertCoin = new System.Windows.Forms.Button();
-            this.btnPaymentPin = new System.Windows.Forms.Button();
+            this.btnPinClear = new System.Windows.Forms.Button();
+            this.btnPinEnter = new System.Windows.Forms.Button();
+            this.btnAsterisk = new System.Windows.Forms.Button();
+            this.btnHash = new System.Windows.Forms.Button();
+            this.btnNum0 = new System.Windows.Forms.Button();
+            this.btnNum9 = new System.Windows.Forms.Button();
+            this.btnNum8 = new System.Windows.Forms.Button();
+            this.btnNum7 = new System.Windows.Forms.Button();
+            this.btnNum6 = new System.Windows.Forms.Button();
+            this.btnNum5 = new System.Windows.Forms.Button();
+            this.btnNum4 = new System.Windows.Forms.Button();
+            this.btnNum3 = new System.Windows.Forms.Button();
+            this.btnNum2 = new System.Windows.Forms.Button();
+            this.btnNum1 = new System.Windows.Forms.Button();
+            this.txtEnterPin = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnDispenseCoin
@@ -60,7 +74,6 @@
             this.btnEnter.Text = "Enter Car Park";
             this.btnEnter.UseVisualStyleBackColor = true;
             this.btnEnter.Visible = false;
-            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
             // 
             // btnPin
             // 
@@ -86,6 +99,18 @@
             this.btnPark.Visible = false;
             this.btnPark.Click += new System.EventHandler(this.btnPark_Click);
             // 
+            // btnPayFee
+            // 
+            this.btnPayFee.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPayFee.Location = new System.Drawing.Point(233, 223);
+            this.btnPayFee.Name = "btnPayFee";
+            this.btnPayFee.Size = new System.Drawing.Size(215, 75);
+            this.btnPayFee.TabIndex = 4;
+            this.btnPayFee.Text = "Enter Pin To Pay Fee";
+            this.btnPayFee.UseVisualStyleBackColor = true;
+            this.btnPayFee.Visible = false;
+            this.btnPayFee.Click += new System.EventHandler(this.btnPayFee_Click);
+            // 
             // btnLeaveCarPark
             // 
             this.btnLeaveCarPark.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -110,40 +135,192 @@
             this.btnPayment.Visible = false;
             this.btnPayment.Click += new System.EventHandler(this.btnPayment_Click);
             // 
-            // btnInsertCoin
+            // btnPinClear
             // 
-            this.btnInsertCoin.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsertCoin.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnInsertCoin.Location = new System.Drawing.Point(233, 12);
-            this.btnInsertCoin.Name = "btnInsertCoin";
-            this.btnInsertCoin.Size = new System.Drawing.Size(215, 75);
-            this.btnInsertCoin.TabIndex = 7;
-            this.btnInsertCoin.Text = "Insert Coin";
-            this.btnInsertCoin.UseVisualStyleBackColor = true;
-            this.btnInsertCoin.Visible = false;
-            this.btnInsertCoin.Click += new System.EventHandler(this.btnInsertCoin_Click);
+            this.btnPinClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPinClear.Location = new System.Drawing.Point(704, 304);
+            this.btnPinClear.Name = "btnPinClear";
+            this.btnPinClear.Size = new System.Drawing.Size(125, 55);
+            this.btnPinClear.TabIndex = 30;
+            this.btnPinClear.Text = "Clear";
+            this.btnPinClear.UseVisualStyleBackColor = true;
+            this.btnPinClear.Visible = false;
             // 
-            // btnPaymentPin
+            // btnPinEnter
             // 
-            this.btnPaymentPin.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPaymentPin.Location = new System.Drawing.Point(233, 223);
-            this.btnPaymentPin.Name = "btnPaymentPin";
-            this.btnPaymentPin.Size = new System.Drawing.Size(215, 75);
-            this.btnPaymentPin.TabIndex = 8;
-            this.btnPaymentPin.Text = "Secure Pin Entry";
-            this.btnPaymentPin.UseVisualStyleBackColor = true;
-            this.btnPaymentPin.Visible = false;
-            this.btnPaymentPin.Click += new System.EventHandler(this.btnPaymentPin_Click);
+            this.btnPinEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPinEnter.Location = new System.Drawing.Point(837, 304);
+            this.btnPinEnter.Name = "btnPinEnter";
+            this.btnPinEnter.Size = new System.Drawing.Size(125, 55);
+            this.btnPinEnter.TabIndex = 29;
+            this.btnPinEnter.Text = "Enter";
+            this.btnPinEnter.UseVisualStyleBackColor = true;
+            this.btnPinEnter.Visible = false;
+            // 
+            // btnAsterisk
+            // 
+            this.btnAsterisk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAsterisk.Location = new System.Drawing.Point(907, 243);
+            this.btnAsterisk.Name = "btnAsterisk";
+            this.btnAsterisk.Size = new System.Drawing.Size(55, 55);
+            this.btnAsterisk.TabIndex = 28;
+            this.btnAsterisk.Text = "*";
+            this.btnAsterisk.UseVisualStyleBackColor = true;
+            this.btnAsterisk.Visible = false;
+            // 
+            // btnHash
+            // 
+            this.btnHash.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHash.Location = new System.Drawing.Point(704, 245);
+            this.btnHash.Name = "btnHash";
+            this.btnHash.Size = new System.Drawing.Size(55, 55);
+            this.btnHash.TabIndex = 27;
+            this.btnHash.Text = "#";
+            this.btnHash.UseVisualStyleBackColor = true;
+            this.btnHash.Visible = false;
+            // 
+            // btnNum0
+            // 
+            this.btnNum0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum0.Location = new System.Drawing.Point(805, 244);
+            this.btnNum0.Name = "btnNum0";
+            this.btnNum0.Size = new System.Drawing.Size(55, 55);
+            this.btnNum0.TabIndex = 26;
+            this.btnNum0.Text = "0";
+            this.btnNum0.UseVisualStyleBackColor = true;
+            this.btnNum0.Visible = false;
+            // 
+            // btnNum9
+            // 
+            this.btnNum9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum9.Location = new System.Drawing.Point(907, 182);
+            this.btnNum9.Name = "btnNum9";
+            this.btnNum9.Size = new System.Drawing.Size(55, 55);
+            this.btnNum9.TabIndex = 25;
+            this.btnNum9.Text = "9";
+            this.btnNum9.UseVisualStyleBackColor = true;
+            this.btnNum9.Visible = false;
+            // 
+            // btnNum8
+            // 
+            this.btnNum8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum8.Location = new System.Drawing.Point(805, 183);
+            this.btnNum8.Name = "btnNum8";
+            this.btnNum8.Size = new System.Drawing.Size(55, 55);
+            this.btnNum8.TabIndex = 24;
+            this.btnNum8.Text = "8";
+            this.btnNum8.UseVisualStyleBackColor = true;
+            this.btnNum8.Visible = false;
+            // 
+            // btnNum7
+            // 
+            this.btnNum7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum7.Location = new System.Drawing.Point(704, 183);
+            this.btnNum7.Name = "btnNum7";
+            this.btnNum7.Size = new System.Drawing.Size(55, 55);
+            this.btnNum7.TabIndex = 23;
+            this.btnNum7.Text = "7";
+            this.btnNum7.UseVisualStyleBackColor = true;
+            this.btnNum7.Visible = false;
+            // 
+            // btnNum6
+            // 
+            this.btnNum6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum6.Location = new System.Drawing.Point(907, 121);
+            this.btnNum6.Name = "btnNum6";
+            this.btnNum6.Size = new System.Drawing.Size(55, 55);
+            this.btnNum6.TabIndex = 22;
+            this.btnNum6.Text = "6";
+            this.btnNum6.UseVisualStyleBackColor = true;
+            this.btnNum6.Visible = false;
+            // 
+            // btnNum5
+            // 
+            this.btnNum5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum5.Location = new System.Drawing.Point(805, 122);
+            this.btnNum5.Name = "btnNum5";
+            this.btnNum5.Size = new System.Drawing.Size(55, 55);
+            this.btnNum5.TabIndex = 21;
+            this.btnNum5.Text = "5";
+            this.btnNum5.UseVisualStyleBackColor = true;
+            this.btnNum5.Visible = false;
+            // 
+            // btnNum4
+            // 
+            this.btnNum4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum4.Location = new System.Drawing.Point(704, 122);
+            this.btnNum4.Name = "btnNum4";
+            this.btnNum4.Size = new System.Drawing.Size(55, 55);
+            this.btnNum4.TabIndex = 20;
+            this.btnNum4.Text = "4";
+            this.btnNum4.UseVisualStyleBackColor = true;
+            this.btnNum4.Visible = false;
+            // 
+            // btnNum3
+            // 
+            this.btnNum3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum3.Location = new System.Drawing.Point(907, 60);
+            this.btnNum3.Name = "btnNum3";
+            this.btnNum3.Size = new System.Drawing.Size(55, 55);
+            this.btnNum3.TabIndex = 19;
+            this.btnNum3.Text = "3";
+            this.btnNum3.UseVisualStyleBackColor = true;
+            this.btnNum3.Visible = false;
+            // 
+            // btnNum2
+            // 
+            this.btnNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum2.Location = new System.Drawing.Point(805, 61);
+            this.btnNum2.Name = "btnNum2";
+            this.btnNum2.Size = new System.Drawing.Size(55, 55);
+            this.btnNum2.TabIndex = 18;
+            this.btnNum2.Text = "2";
+            this.btnNum2.UseVisualStyleBackColor = true;
+            this.btnNum2.Visible = false;
+            // 
+            // btnNum1
+            // 
+            this.btnNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNum1.Location = new System.Drawing.Point(704, 61);
+            this.btnNum1.Name = "btnNum1";
+            this.btnNum1.Size = new System.Drawing.Size(55, 55);
+            this.btnNum1.TabIndex = 17;
+            this.btnNum1.Text = "1";
+            this.btnNum1.UseVisualStyleBackColor = true;
+            this.btnNum1.Visible = false;
+            // 
+            // txtEnterPin
+            // 
+            this.txtEnterPin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEnterPin.Location = new System.Drawing.Point(704, 25);
+            this.txtEnterPin.Name = "txtEnterPin";
+            this.txtEnterPin.Size = new System.Drawing.Size(258, 29);
+            this.txtEnterPin.TabIndex = 16;
+            this.txtEnterPin.Text = "Please Enter Your Secure Pin";
             // 
             // UIForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(993, 677);
-            this.Controls.Add(this.btnPaymentPin);
-            this.Controls.Add(this.btnInsertCoin);
+            this.Controls.Add(this.btnPinClear);
+            this.Controls.Add(this.btnPinEnter);
+            this.Controls.Add(this.btnAsterisk);
+            this.Controls.Add(this.btnHash);
+            this.Controls.Add(this.btnNum0);
+            this.Controls.Add(this.btnNum9);
+            this.Controls.Add(this.btnNum8);
+            this.Controls.Add(this.btnNum7);
+            this.Controls.Add(this.btnNum6);
+            this.Controls.Add(this.btnNum5);
+            this.Controls.Add(this.btnNum4);
+            this.Controls.Add(this.btnNum3);
+            this.Controls.Add(this.btnNum2);
+            this.Controls.Add(this.btnNum1);
+            this.Controls.Add(this.txtEnterPin);
             this.Controls.Add(this.btnPayment);
             this.Controls.Add(this.btnLeaveCarPark);
+            this.Controls.Add(this.btnPayFee);
             this.Controls.Add(this.btnPark);
             this.Controls.Add(this.btnPin);
             this.Controls.Add(this.btnEnter);
@@ -151,6 +328,7 @@
             this.Name = "UIForm";
             this.Text = "UI";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -160,9 +338,23 @@
         private System.Windows.Forms.Button btnEnter;
         private System.Windows.Forms.Button btnPin;
         private System.Windows.Forms.Button btnPark;
+        private System.Windows.Forms.Button btnPayFee;
         private System.Windows.Forms.Button btnLeaveCarPark;
         private System.Windows.Forms.Button btnPayment;
-        private System.Windows.Forms.Button btnInsertCoin;
-        private System.Windows.Forms.Button btnPaymentPin;
+        private System.Windows.Forms.Button btnPinClear;
+        private System.Windows.Forms.Button btnPinEnter;
+        private System.Windows.Forms.Button btnAsterisk;
+        private System.Windows.Forms.Button btnHash;
+        private System.Windows.Forms.Button btnNum0;
+        private System.Windows.Forms.Button btnNum9;
+        private System.Windows.Forms.Button btnNum8;
+        private System.Windows.Forms.Button btnNum7;
+        private System.Windows.Forms.Button btnNum6;
+        private System.Windows.Forms.Button btnNum5;
+        private System.Windows.Forms.Button btnNum4;
+        private System.Windows.Forms.Button btnNum3;
+        private System.Windows.Forms.Button btnNum2;
+        private System.Windows.Forms.Button btnNum1;
+        private System.Windows.Forms.TextBox txtEnterPin;
     }
 }

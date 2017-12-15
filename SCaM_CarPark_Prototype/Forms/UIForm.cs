@@ -20,7 +20,6 @@ namespace SCaM_CarPark_Prototype
 
         private void BtnPinEntry_Click(object sender, EventArgs e)
         {
-            (new PinForm()).Show();
             btnEnter.Visible = true;
             btnPin.Visible = false;
         }
@@ -37,12 +36,16 @@ namespace SCaM_CarPark_Prototype
             btnEnter.Visible = false;
         }
 
-        
+        private void btnPayFee_Click(object sender, EventArgs e)
+        {
+            btnPayFee.Visible = false;
+            btnPayment.Visible = true;
+        }
 
         private void btnPark_Click(object sender, EventArgs e)
         {
+            btnPayFee.Visible = true;
             btnPark.Visible = false;
-            btnInsertCoin.Visible = true;
         }
 
         private void btnLeaveCarPark_Click(object sender, EventArgs e)
@@ -53,22 +56,130 @@ namespace SCaM_CarPark_Prototype
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
-            (new PinForm()).Show();
+            (new PaymentForm()).Show();
             btnPayment.Visible = false;
             btnLeaveCarPark.Visible = true;
         }
 
-        private void btnInsertCoin_Click(object sender, EventArgs e)
+        /// 
+        /// Section below is for PIN entry elements
+        /// 
+        private void btnNum0_Click(object sender, EventArgs e)
         {
-            btnPaymentPin.Visible = true;
-            btnInsertCoin.Visible = false;
+            if (txtEnterPin.Text == "Please Enter Your Secure Pin")
+            {
+                txtEnterPin.Text = "";
+            }
+            txtEnterPin.Text += "0";
         }
 
-        private void btnPaymentPin_Click(object sender, EventArgs e)
+        private void BtnNum1_Click(object sender, EventArgs e)
         {
-            (new PaymentForm()).Show();
-            btnPaymentPin.Visible = false;
-            btnPayment.Visible = true;
+            if (txtEnterPin.Text == "Please Enter Your Secure Pin")
+            {
+                txtEnterPin.Text = "";
+            }
+            txtEnterPin.Text += "1";
+        }
+
+        private void BtnNum2_Click(object sender, EventArgs e)
+        {
+            if (txtEnterPin.Text == "Please Enter Your Secure Pin")
+            {
+                txtEnterPin.Text = "";
+            }
+            txtEnterPin.Text += "2";
+        }
+
+        private void btnNum3_Click(object sender, EventArgs e)
+        {
+            if (txtEnterPin.Text == "Please Enter Your Secure Pin")
+            {
+                txtEnterPin.Text = "";
+            }
+            txtEnterPin.Text += "3";
+        }
+
+        private void btnNum4_Click(object sender, EventArgs e)
+        {
+            if (txtEnterPin.Text == "Please Enter Your Secure Pin")
+            {
+                txtEnterPin.Text = "";
+            }
+            txtEnterPin.Text += "4";
+        }
+
+        private void btnNum5_Click(object sender, EventArgs e)
+        {
+            if (txtEnterPin.Text == "Please Enter Your Secure Pin")
+            {
+                txtEnterPin.Text = "";
+            }
+            txtEnterPin.Text += "5";
+        }
+
+        private void btnNum6_Click(object sender, EventArgs e)
+        {
+            if (txtEnterPin.Text == "Please Enter Your Secure Pin")
+            {
+                txtEnterPin.Text = "";
+            }
+            txtEnterPin.Text += "6";
+        }
+
+        private void btnNum7_Click(object sender, EventArgs e)
+        {
+            if (txtEnterPin.Text == "Please Enter Your Secure Pin")
+            {
+                txtEnterPin.Text = "";
+            }
+            txtEnterPin.Text += "7";
+        }
+
+        private void btnNum8_Click(object sender, EventArgs e)
+        {
+            if (txtEnterPin.Text == "Please Enter Your Secure Pin")
+            {
+                txtEnterPin.Text = "";
+            }
+            txtEnterPin.Text += "8";
+        }
+
+        private void btnNum9_Click(object sender, EventArgs e)
+        {
+            if (txtEnterPin.Text == "Please Enter Your Secure Pin")
+            {
+                txtEnterPin.Text = "";
+            }
+            txtEnterPin.Text += "9";
+        }
+
+        private void btnHash_Click(object sender, EventArgs e)
+        {
+            if (txtEnterPin.Text == "Please Enter Your Secure Pin")
+            {
+                txtEnterPin.Text = "";
+            }
+            txtEnterPin.Text += "#";
+        }
+
+        private void btnAsterisk_Click(object sender, EventArgs e)
+        {
+            if (txtEnterPin.Text == "Please Enter Your Secure Pin")
+            {
+                txtEnterPin.Text = "";
+            }
+            txtEnterPin.Text += "*";
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtEnterPin.Text = "Please Enter Your Secure Pin";
+        }
+
+        private void btnPinEnter_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

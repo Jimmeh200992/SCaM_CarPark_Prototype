@@ -53,6 +53,7 @@
             this.txtEnterPin.Size = new System.Drawing.Size(258, 29);
             this.txtEnterPin.TabIndex = 1;
             this.txtEnterPin.Text = "Please Enter Your Secure Pin";
+            //this.txtEnterPin.TextChanged += new System.EventHandler(this.txtEnterPin_TextChanged);
             // 
             // btnNum1
             // 
