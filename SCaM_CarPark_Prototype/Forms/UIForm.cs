@@ -22,6 +22,7 @@ namespace SCaM_CarPark_Prototype
         {
             btnEnter.Visible = true;
             btnPin.Visible = false;
+            grpBxPinEntry.Visible = true;
         }
 
         private void btnDispenseCoin_Click(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace SCaM_CarPark_Prototype
             btnDispenseCoin.Visible = false;
         }
 
-        private void btnEnter_Click(object sender, EventArgs e)
+        private void btnEnter_Click_1(object sender, EventArgs e)
         {
             btnPark.Visible = true;
             btnEnter.Visible = false;
@@ -40,6 +41,7 @@ namespace SCaM_CarPark_Prototype
         {
             btnPayFee.Visible = false;
             btnPayment.Visible = true;
+            grpBxPinEntry.Visible = true;
         }
 
         private void btnPark_Click(object sender, EventArgs e)
@@ -64,16 +66,8 @@ namespace SCaM_CarPark_Prototype
         /// 
         /// Section below is for PIN entry elements
         /// 
-        private void btnNum0_Click(object sender, EventArgs e)
-        {
-            if (txtEnterPin.Text == "Please Enter Your Secure Pin")
-            {
-                txtEnterPin.Text = "";
-            }
-            txtEnterPin.Text += "0";
-        }
 
-        private void BtnNum1_Click(object sender, EventArgs e)
+        private void btnNum1_Click_1(object sender, EventArgs e)
         {
             if (txtEnterPin.Text == "Please Enter Your Secure Pin")
             {
@@ -82,7 +76,7 @@ namespace SCaM_CarPark_Prototype
             txtEnterPin.Text += "1";
         }
 
-        private void BtnNum2_Click(object sender, EventArgs e)
+        private void btnNum2_Click(object sender, EventArgs e)
         {
             if (txtEnterPin.Text == "Please Enter Your Secure Pin")
             {
@@ -154,6 +148,20 @@ namespace SCaM_CarPark_Prototype
             txtEnterPin.Text += "9";
         }
 
+        private void btnNum0_Click(object sender, EventArgs e)
+        {
+            if (txtEnterPin.Text == "Please Enter Your Secure Pin")
+            {
+                txtEnterPin.Text = "";
+            }
+            txtEnterPin.Text += "0";
+        }
+
+        private void btnPinClear_Click(object sender, EventArgs e)
+        {
+            txtEnterPin.Text = "Please Enter Your Secure Pin";
+        }
+
         private void btnHash_Click(object sender, EventArgs e)
         {
             if (txtEnterPin.Text == "Please Enter Your Secure Pin")
@@ -163,7 +171,7 @@ namespace SCaM_CarPark_Prototype
             txtEnterPin.Text += "#";
         }
 
-        private void btnAsterisk_Click(object sender, EventArgs e)
+        private void btnAsterisk_Click_1(object sender, EventArgs e)
         {
             if (txtEnterPin.Text == "Please Enter Your Secure Pin")
             {
@@ -172,14 +180,10 @@ namespace SCaM_CarPark_Prototype
             txtEnterPin.Text += "*";
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            txtEnterPin.Text = "Please Enter Your Secure Pin";
-        }
-
         private void btnPinEnter_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            grpBxPinEntry.Visible = false;
         }
+
     }
 }
