@@ -45,57 +45,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CardPaymentForm.cs">
+    <Compile Include="Classes\ActiveChipCoins.cs" />
+    <Compile Include="Classes\Barrier.cs" />
+    <Compile Include="Classes\CarPark.cs" />
+    <Compile Include="MessageBoxManager.cs" />
+    <Compile Include="Classes\PayMachine.cs" />
+    <Compile Include="Classes\EntrySensor.cs" />
+    <Compile Include="Classes\ExitSensor.cs" />
+    <Compile Include="Classes\FullSign.cs" />
+    <Compile Include="Classes\Sensor.cs" />
+    <Compile Include="Classes\ChipCoin.cs" />
+    <Compile Include="Classes\ChipCoinMachine.cs" />
+    <Compile Include="Classes\ChipCoinValidation.cs" />
+    <Compile Include="Forms\CardPaymentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CardPaymentForm.Designer.cs">
+    <Compile Include="Forms\CardPaymentForm.Designer.cs">
       <DependentUpon>CardPaymentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CashPaymentForm.cs">
+    <Compile Include="Forms\CashPaymentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CashPaymentForm.Designer.cs">
+    <Compile Include="Forms\CashPaymentForm.Designer.cs">
       <DependentUpon>CashPaymentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PaymentForm.cs">
+    <Compile Include="Forms\PaymentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PaymentForm.Designer.cs">
+    <Compile Include="Forms\PaymentForm.Designer.cs">
       <DependentUpon>PaymentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PinForm.cs">
+    <Compile Include="Forms\PinForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PinForm.Designer.cs">
+    <Compile Include="Forms\PinForm.Designer.cs">
       <DependentUpon>PinForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="StartForm.cs">
+    <Compile Include="Forms\StartForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StartForm.Designer.cs">
+    <Compile Include="Forms\StartForm.Designer.cs">
       <DependentUpon>StartForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UIForm.cs">
+    <Compile Include="Forms\UIForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UIForm.Designer.cs">
+    <Compile Include="Forms\UIForm.Designer.cs">
       <DependentUpon>UIForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CardPaymentForm.resx">
+    <EmbeddedResource Include="Forms\CardPaymentForm.resx">
       <DependentUpon>CardPaymentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CashPaymentForm.resx">
+    <EmbeddedResource Include="Forms\CashPaymentForm.resx">
       <DependentUpon>CashPaymentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PaymentForm.resx">
+    <EmbeddedResource Include="Forms\PaymentForm.resx">
       <DependentUpon>PaymentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PinForm.resx">
+    <EmbeddedResource Include="Forms\PinForm.resx">
       <DependentUpon>PinForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StartForm.resx">
+    <EmbeddedResource Include="Forms\StartForm.resx">
       <DependentUpon>StartForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -107,7 +119,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UIForm.resx">
+    <EmbeddedResource Include="Forms\UIForm.resx">
       <DependentUpon>UIForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -123,5 +135,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
