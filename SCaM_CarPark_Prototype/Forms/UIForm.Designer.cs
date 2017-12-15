@@ -32,9 +32,10 @@
             this.btnEnter = new System.Windows.Forms.Button();
             this.btnPin = new System.Windows.Forms.Button();
             this.btnPark = new System.Windows.Forms.Button();
-            this.btnPayFee = new System.Windows.Forms.Button();
             this.btnLeaveCarPark = new System.Windows.Forms.Button();
             this.btnPayment = new System.Windows.Forms.Button();
+            this.btnInsertCoin = new System.Windows.Forms.Button();
+            this.btnPaymentPin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDispenseCoin
@@ -85,18 +86,6 @@
             this.btnPark.Visible = false;
             this.btnPark.Click += new System.EventHandler(this.btnPark_Click);
             // 
-            // btnPayFee
-            // 
-            this.btnPayFee.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPayFee.Location = new System.Drawing.Point(233, 223);
-            this.btnPayFee.Name = "btnPayFee";
-            this.btnPayFee.Size = new System.Drawing.Size(215, 75);
-            this.btnPayFee.TabIndex = 4;
-            this.btnPayFee.Text = "Enter Pin To Pay Fee";
-            this.btnPayFee.UseVisualStyleBackColor = true;
-            this.btnPayFee.Visible = false;
-            this.btnPayFee.Click += new System.EventHandler(this.btnPayFee_Click);
-            // 
             // btnLeaveCarPark
             // 
             this.btnLeaveCarPark.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -121,14 +110,40 @@
             this.btnPayment.Visible = false;
             this.btnPayment.Click += new System.EventHandler(this.btnPayment_Click);
             // 
+            // btnInsertCoin
+            // 
+            this.btnInsertCoin.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertCoin.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnInsertCoin.Location = new System.Drawing.Point(233, 12);
+            this.btnInsertCoin.Name = "btnInsertCoin";
+            this.btnInsertCoin.Size = new System.Drawing.Size(215, 75);
+            this.btnInsertCoin.TabIndex = 7;
+            this.btnInsertCoin.Text = "Insert Coin";
+            this.btnInsertCoin.UseVisualStyleBackColor = true;
+            this.btnInsertCoin.Visible = false;
+            this.btnInsertCoin.Click += new System.EventHandler(this.btnInsertCoin_Click);
+            // 
+            // btnPaymentPin
+            // 
+            this.btnPaymentPin.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPaymentPin.Location = new System.Drawing.Point(233, 223);
+            this.btnPaymentPin.Name = "btnPaymentPin";
+            this.btnPaymentPin.Size = new System.Drawing.Size(215, 75);
+            this.btnPaymentPin.TabIndex = 8;
+            this.btnPaymentPin.Text = "Secure Pin Entry";
+            this.btnPaymentPin.UseVisualStyleBackColor = true;
+            this.btnPaymentPin.Visible = false;
+            this.btnPaymentPin.Click += new System.EventHandler(this.btnPaymentPin_Click);
+            // 
             // UIForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(993, 677);
+            this.Controls.Add(this.btnPaymentPin);
+            this.Controls.Add(this.btnInsertCoin);
             this.Controls.Add(this.btnPayment);
             this.Controls.Add(this.btnLeaveCarPark);
-            this.Controls.Add(this.btnPayFee);
             this.Controls.Add(this.btnPark);
             this.Controls.Add(this.btnPin);
             this.Controls.Add(this.btnEnter);
@@ -145,8 +160,9 @@
         private System.Windows.Forms.Button btnEnter;
         private System.Windows.Forms.Button btnPin;
         private System.Windows.Forms.Button btnPark;
-        private System.Windows.Forms.Button btnPayFee;
         private System.Windows.Forms.Button btnLeaveCarPark;
         private System.Windows.Forms.Button btnPayment;
+        private System.Windows.Forms.Button btnInsertCoin;
+        private System.Windows.Forms.Button btnPaymentPin;
     }
 }

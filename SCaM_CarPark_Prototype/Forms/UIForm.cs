@@ -37,17 +37,12 @@ namespace SCaM_CarPark_Prototype
             btnEnter.Visible = false;
         }
 
-        private void btnPayFee_Click(object sender, EventArgs e)
-        {
-            (new PinForm()).Show();
-            btnPayFee.Visible = false;
-            btnPayment.Visible = true;
-        }
+        
 
         private void btnPark_Click(object sender, EventArgs e)
         {
-            btnPayFee.Visible = true;
             btnPark.Visible = false;
+            btnInsertCoin.Visible = true;
         }
 
         private void btnLeaveCarPark_Click(object sender, EventArgs e)
@@ -58,9 +53,22 @@ namespace SCaM_CarPark_Prototype
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
-            (new PaymentForm()).Show();
+            (new PinForm()).Show();
             btnPayment.Visible = false;
             btnLeaveCarPark.Visible = true;
+        }
+
+        private void btnInsertCoin_Click(object sender, EventArgs e)
+        {
+            btnPaymentPin.Visible = true;
+            btnInsertCoin.Visible = false;
+        }
+
+        private void btnPaymentPin_Click(object sender, EventArgs e)
+        {
+            (new PaymentForm()).Show();
+            btnPaymentPin.Visible = false;
+            btnPayment.Visible = true;
         }
     }
 }
